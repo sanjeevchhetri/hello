@@ -23,14 +23,42 @@
             list-style: none ;
             text-decoration: none;
         }
+        img{
+            height: 20%;
+            width: 20%;
+            border-radius: 500%;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px 1%;
+        }
     </style>
 </head>
 <body>
     <header>
-    <img src="DALL·E 2024-12-15 19.55.50 - A modern and elegant logo for a shop named 'K HO YO'. The design should feature stylish typography with a clean and minimalist aesthetic. Incorporate .webp">
+    <a href="#" class="logo"></a><img src="image/DALL·E 2024-12-15 19.55.50 - A modern and elegant logo for a shop named 'K HO YO'. The design should feature stylish typography with a clean and minimalist aesthetic. Incorporate .webp">
     <ul class="navmenu">
-        <li><a href="#"></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Docs</a></li>
     </ul>
+    <div class="nav-icon">
+        <a href="#"><i class='bx bx-search'></i></a>
+        <a href="#"><i class='bx bx-user' ></i></a>
+        <a href="#"><i class='bx bxs-cart-add' ></i></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+
 
 </header>
     
