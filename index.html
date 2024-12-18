@@ -24,8 +24,9 @@
             text-decoration: none;
         }
         header{
-            position: fixed;
+            position: absolute;
             width: 100%;
+            height: 50px;
             top: 0;
             right: 0;
             z-index: 1000;
@@ -33,9 +34,10 @@
             align-items: center;
             justify-content: space-around;
             padding: 20px 1%;
+            background-color: #fff;
         }
         .logo{
-            width:500px;
+            width:300px;
             height: auto;
         }
         .navmenu{
@@ -169,7 +171,37 @@
         }
         .product-text h5{
             position: absolute;
-            
+            top: 13px;
+            left: 13px;
+            color: #fff;
+            font-size: 500;
+            text-transform: uppercase;
+            background-color: #27b737;
+            padding: 3px 10px;
+            border-radius: 2px;
+        }
+        .heart-icon{
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+        }
+        .heart-icon:hover{ 
+            color: #ee1c47;
+        }
+        .ratting i{
+            color: #FF8C00;
+            font-size: 18px;
+        }
+        .price h4{
+            color: #111;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        .price p{
+            color: #151515;
+            font-size: 14px;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -374,8 +406,5 @@
         
     </div>
 </section>
-
-<script src="java.js"></script>
-    
 </body>
 </html>
