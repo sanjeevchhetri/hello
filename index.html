@@ -203,6 +203,129 @@
             font-size: 14px;
             font-weight: 600;
         }
+        .client-reviews{
+            background-color: #f3f4f6;
+        }
+        .reviews{
+            text-align: center;
+        }
+        .reviews h3{
+            color: #111;
+            font-size: 25px;
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 700;
+        }
+        .reviews img{
+            width: 100px;
+            height: auto;
+            border-radius: 50px;
+            margin: 10px 0;
+        }
+        .reviews p{
+            color: #707070;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        .reviews h2{
+            font-size: 22px;
+            color:#000;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 2px;
+        }
+        .contact{
+            background-color: #f3f4f6;
+        }
+        .contact-info{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+            gap: 3rem
+        }
+        .first-info img{
+            width: 140px;
+            height: auto;
+        }
+        .contact-info h4{
+            color: #212529;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .contact-info p{
+            color: #565656;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all .42s;
+        }
+        .contact-info p:hover{
+            color: #ee1c47;
+        }
+        .social-icon{
+            color: #565656;
+            margin-right: 10px;
+            font-size: 20px;
+            transition: all .42;
+        }
+        .social-icon i:hover{
+            transform: scale(1.3);
+        }
+        .end-text{
+            background-color: #edfff1;
+            text-align: center;
+        }
+        .end-text p{
+            color:#111;
+            text-transform: capitalize;
+        }
+        @media(max-width:890px){
+            header{
+                padding:20px 3%;
+                transition: .4s;
+            }
+        }
+        @media(max-width:630px){
+            .main-text h1{
+                font-size: 50px;
+                transition: .4s;
+            }
+            .main-text p{
+                font-size: 18px;
+                transition: .4s;
+            }
+            .main-btn{
+                padding: 10px 20px;
+                transition: .4s;
+            }
+        }
+        @media(max-width:750px){
+            .navmenu{
+                position: absolute;
+                top: 100%;
+                right: -100%;
+                width: 300;
+                height: 130vh;
+                background: #edfff1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 120px 30px;
+                transition: all .42s;
+            }
+            .navmenu a{
+                display: block;
+                margin: 18px 0;
+            }
+            .navmenu.open{
+                right: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -405,14 +528,26 @@
     </div>
 </section>
 
+<section class="client-reviews">
+    <div class="reviews">
+        <h3>Client Reviews</h3>
+        <img src="image/KP BA.webp">
+        <p>
+            उत्तम गुणस्तर र आकर्षक डिजाइन! केपी ओली ब्रान्डबाट <br>किनमेल गर्दा धेरै राम्रो अनुभव भयो। लुगा आरामदायक र स्टाइलिश मात्र होइन, दीर्घकालसम्म टिक्ने जस्तो पनि देखिन्छ। सबैलाई सिफारिस गर्छु। जय कांग्रेस!
+        </p>
+        <h2>KP Sharma OLi</h2>
+        <p>Nepal's Prime Minister</p>
+    </div>
+</section>
+
 <section class="contact">
     <div class="contact-info">
         <div class="first-info">
         <img src="image/Kapada Pasal (1).png">
 
-        <p>3245 Grand Street Longview, <br> TX united Kingdom</p>
-        <p>02346445</p>
-        <p>saidulam@gmail.com</p>
+        <p>1456 Kathmandu , <br> Putali Sadak</p>
+        <p>9845222222</p>
+        <p>KapdaRamRoKinu11@gmail.com</p>
 
         <div class="social-icon">
             <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -449,5 +584,9 @@
       </div>
     </div>
 </section>
+
+<div class="end-text">
+    <p>COPYRIGHT © 2081 KAPADA PASAL | All Rights Reserved</p>
+</div>
 </body>
 </html>
